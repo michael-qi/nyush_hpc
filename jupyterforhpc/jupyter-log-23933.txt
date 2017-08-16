@@ -1,0 +1,36 @@
+
+
+  Paste ssh command in a terminal on local host (i.e., laptop)
+  ------------------------------------------------------------
+  ssh -N -L 9043:10.214.97.170:9043 michael@login2
+
+  Open this address in a browser on local host; see token below
+  ------------------------------------------------------------
+  localhost:9043                                      
+
+
+[W 14:16:18.205 NotebookApp] Widgets are unavailable. Please install widgetsnbextension or ipywidgets 4.0
+[I 14:16:18.247 NotebookApp] Serving notebooks from local directory: /gpfsnyu/home/michael/jupyterforhpc
+[I 14:16:18.247 NotebookApp] 0 active kernels 
+[I 14:16:18.247 NotebookApp] The Jupyter Notebook is running at: http://10.214.97.170:9043/?token=a855063623efbec877632d280b38798accbe6ce634551ce3
+[I 14:16:18.247 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:16:18.273 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://10.214.97.170:9043/?token=a855063623efbec877632d280b38798accbe6ce634551ce3
+[I 14:18:52.829 NotebookApp] 302 GET / (10.214.97.8) 0.39ms
+[I 14:18:52.859 NotebookApp] 302 GET /tree? (10.214.97.8) 0.46ms
+[W 14:19:24.842 NotebookApp] 401 POST /login?next=%2Ftree%3F (10.214.97.8) 0.94ms referer=http://localhost:9043/login?next=%2Ftree%3F
+[W 14:19:27.768 NotebookApp] 401 POST /login?next=%2Ftree%3F (10.214.97.8) 0.92ms referer=http://localhost:9043/login?next=%2Ftree%3F
+[I 14:20:23.102 NotebookApp] 302 POST /login?next=%2Ftree%3F (10.214.97.8) 0.69ms
+[W 14:20:23.678 NotebookApp] Native kernel (python2) is not available
+[I 14:21:03.625 NotebookApp] New terminal with automatic name: 1
+[I 14:21:24.191 NotebookApp] EOF on FD 16; stopping reading
+[I 14:21:24.292 NotebookApp] Terminal 1 closed
+[I 14:21:49.415 NotebookApp] Creating new file in 
+[W 14:22:18.315 NotebookApp] Native kernel (python2) is not available
+[W 14:22:22.796 NotebookApp] Native kernel (python2) is not available
+slurmstepd: error: *** JOB 23933 ON compute170 CANCELLED AT 2017-03-07T14:23:17 ***
+[C 14:23:17.156 NotebookApp] received signal 15, stopping
+[I 14:23:17.157 NotebookApp] Shutting down kernels

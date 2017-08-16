@@ -1,0 +1,21 @@
+
+
+  Paste ssh command in a terminal on local host (i.e., laptop)
+  ------------------------------------------------------------
+  ssh -N -L 8929:10.214.97.24:8929 michael@login2
+
+  Open this address in a browser on local host; see token below
+  ------------------------------------------------------------
+  localhost:8929                                      
+
+
+Traceback (most recent call last):
+  File "/gpfsnyu/packages/python/gnu/2.7.10/bin/jupyter-notebook", line 7, in <module>
+    from notebook.notebookapp import main
+  File "/gpfsnyu/packages/python/gnu/2.7.10/lib/python2.7/site-packages/notebook/notebookapp.py", line 65, in <module>
+    from .services.sessions.sessionmanager import SessionManager
+  File "/gpfsnyu/packages/python/gnu/2.7.10/lib/python2.7/site-packages/notebook/services/sessions/sessionmanager.py", line 13, in <module>
+    from pysqlite2 import dbapi2 as sqlite3
+  File "/gpfsnyu/packages/python/gnu/2.7.10/lib/python2.7/site-packages/pysqlite2/dbapi2.py", line 28, in <module>
+    from pysqlite2._sqlite import *
+ImportError: /gpfsnyu/packages/python/gnu/2.7.10/lib/python2.7/site-packages/pysqlite2/_sqlite.so: undefined symbol: sqlite3_stmt_readonly
