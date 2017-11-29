@@ -10,6 +10,7 @@ ssh -N -L 8193:10.214.***.***:8193 NetID@hpc.shanghai.nyu.edu
 ------------------------------------------------------------------
 localhost:8193  (prefix w/ https:// if using password)
 
-please check the generated log file "jupyter-log-****.txt" for more detail information.
+Please check the generated log file "jupyter-log-****.txt" for more detail information.
+Token and detail port number will be written in this log file.
 
 
