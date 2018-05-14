@@ -1,6 +1,7 @@
 % start the matlabpool with maximum available workers
 % control how many workers by setting ntasks in your sbatch script
-pc = parcluster('local')
+pc = parcluster('local');
+pc.NumWorkers = str2num(getenv('SLURM_CPUS_ON_NODE'));
 parpool(pc, str2num(getenv('SLURM_CPUS_ON_NODE')))
 
 % run a parfor loop, distributing the iterations to the 12 workers
