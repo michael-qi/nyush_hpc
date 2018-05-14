@@ -4,7 +4,7 @@
 #SBATCH --output=nor.%j.out
 #SBATCH --error=err.%j.err
 #SBATCH --nodes=1
-#SBATCH --ntasks=4
+#SBATCH -c 4
 #SBATCH --partition=parallel
 #SBATCH --time=01:00:00
 
