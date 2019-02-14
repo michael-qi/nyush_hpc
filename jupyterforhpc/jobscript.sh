@@ -7,7 +7,6 @@
 #SBATCH --job-name jupyter
 #SBATCH --output jupyter-log-%J.txt
 
-source /etc/profile.d/modules.sh
 module purge
 module load python/gnu/2.7.10
 
@@ -23,5 +22,4 @@ echo    "  Open this address in a browser on local host; see token below"
 echo    "  ------------------------------------------------------------"
 echo -e "  localhost:$ipnport                                      \n\n"
 
-ipcluster start --daemonize
 jupyter-notebook --no-browser --port=$ipnport --ip=$ipnip
